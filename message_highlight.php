@@ -99,7 +99,7 @@ class message_highlight extends rcube_plugin
 
       $args['blocks']['mh_preferences'] =  array(
         'options' => array(),
-        'name'    => rcube::Q($this->gettext('mh_title'))
+        'name'    => rcube_utils::rep_specialchars_output($this->gettext('mh_title'))
         );
 
       $i = 1;
@@ -131,10 +131,10 @@ class message_highlight extends rcube_plugin
 
     // header select box
     $header_select = new html_select(array('name' => '_mh_header[]', 'class' => 'rcmfd_mh_header form-control custom-select pretty-select'));
-    $header_select->add(rcube::Q($this->gettext('subject')), 'subject');
-    $header_select->add(rcube::Q($this->gettext('from')), 'from');
-    $header_select->add(rcube::Q($this->gettext('to')), 'to');
-    $header_select->add(rcube::Q($this->gettext('cc')), 'cc');
+    $header_select->add(rcube_utils::rep_specialchars_output($this->gettext('subject')), 'subject');
+    $header_select->add(rcube_utils::rep_specialchars_output($this->gettext('from')), 'from');
+    $header_select->add(rcube_utils::rep_specialchars_output($this->gettext('to')), 'to');
+    $header_select->add(rcube_utils::rep_specialchars_output($this->gettext('cc')), 'cc');
 
     // input field
     $input = new html_inputfield(array('name' => '_mh_input[]', 'class' => 'rcmfd_mh_input form-control', 'type' => 'text', 'autocomplete' => 'off', 'value' => $input));
@@ -152,9 +152,9 @@ class message_highlight extends rcube_plugin
 
     $content = html::div('mh_preferences_row',
       html::div('', $header_select->show($header)) .
-      html::div('ml-3 text-center', html::span('mh_matches', rcube::Q($this->gettext('mh_matches')))) .
+      html::div('ml-3 text-center', html::span('mh_matches', rcube_utils::rep_specialchars_output($this->gettext('mh_matches')))) .
       html::div('ml-3', $input->show()) .
-      html::div('ml-5 text-center', html::span('mh_color', rcube::Q($this->gettext('mh_color')))) .
+      html::div('ml-5 text-center', html::span('mh_color', rcube_utils::rep_specialchars_output($this->gettext('mh_color')))) .
       html::div('ml-3', $color) .
       html::div('ml-3', $button) .
       html::div('ml-3', $add_button)
@@ -168,7 +168,7 @@ class message_highlight extends rcube_plugin
     $this->add_texts('localization/', false);
     $args['list']['mh_preferences'] = array(
       'id'      => 'mh_preferences',
-      'section' => rcube::Q($this->gettext('mh_title'))
+      'section' => rcube_utils::rep_specialchars_output($this->gettext('mh_title'))
       );
     return($args);
   }
