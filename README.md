@@ -8,6 +8,26 @@ FEATURES
 
 Go to roundcube settings area and select rules to highlight emails in your mailview.
 
+INSTALL
+-------
+
+Use composer from the Roundcube root directory:
+
+```sh
+composer require texxasrulez/message_highlight:dev-master
+```
+
+_NOTE:_ Answer **N** when composer ask you about plugin activation.
+
+Activate the plugin by editing the `HOME_RC/config/config.inc.php` file:
+
+```php
+$config['plugins'] = [
+        // Other plugins...
+        'message_highlight',
+];
+```
+
 CONTACT
 -------
 Author:   Cor Bosman (cor@roundcu.be)
