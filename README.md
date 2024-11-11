@@ -10,7 +10,8 @@ Go to roundcube settings area and select rules to highlight emails in your mailv
 
 CONTACT
 -------
-Author:   Cor Bosman (cor@roundcu.be)
+Author: Gene Hawkins (texxasrulez@yahoo.com)  
+Original Author: Cor Bosman (cor@roundcu.be))
 
 Bug reports through github (https://github.com/corbosman/message_highlight/issues)
 
