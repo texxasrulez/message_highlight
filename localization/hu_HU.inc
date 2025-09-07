@@ -1,14 +1,15 @@
 <?php
-$labels = array();
-$labels['mh_title'] = 'Üzenet kiemelései';
-$labels['mh_matches'] = 'megfelel';
-$labels['mh_color'] = 'szín';
-$labels['mh_delete'] = 'delete';
-$labels['mh_delete_description'] = 'Törölje ezt a sort';
-$labels['mh_add'] = 'sor hozzáadása';
-$labels['mh_add_description'] = 'Adjon hozzá egy további sort e sor alá';
-$labels['deleteconfirm'] = 'Tényleg törölni akarja ezt a szabályt?';
-$labels['headererror'] = 'Hiba az üzenetszabályban';
-$labels['inputempty'] = 'Egy vagy több találatod üres';
-$labels['invalidcolor'] = 'Érvénytelen szín';
+$labels['mh_title'] = 'Üzenetek kiemelése';
+$labels['mh_matches'] = 'tartalmazza';
+$labels['mh_color'] = 'kiemelés színnel';
+$labels['mh_delete'] = 'Törlés';
+$labels['mh_delete_description'] = 'Szabály törlése';
+$labels['mh_add'] = 'Hozzáadás';
+$labels['mh_add_description'] = 'Egy új színnel történő kiemelés felvétele';
+$labels['deleteconfirm'] = 'Biztos benne, hogy törölni kívánja ezt a kiemelési szabályt?';
+
+// elvileg ezek sosem következhetnek be
+$labels['headererror'] = 'Hiba a felvett kiemelési szabályban';
+$labels['inputempty'] = 'Egy vagy több kiemelési szabály üres';
+$labels['invalidcolor'] = 'Hibás kiemelési szín';
 ?>

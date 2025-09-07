@@ -1,14 +1,15 @@
 <?php
-$labels = array();
-$labels['mh_title'] = 'Höhepunkte der Nachricht';
-$labels['mh_matches'] = 'passt zu';
-$labels['mh_color'] = 'farbe';
+$labels['mh_title'] = 'Nachrichtenmarkierung';
+$labels['mh_matches'] = 'enthält';
+$labels['mh_color'] = 'Farbe';
 $labels['mh_delete'] = 'löschen';
-$labels['mh_delete_description'] = 'Diese Zeile löschen';
-$labels['mh_add'] = 'zeile hinzufügen';
-$labels['mh_add_description'] = 'Fügen Sie eine zusätzliche Zeile unter dieser Zeile ein';
-$labels['deleteconfirm'] = 'Wollen Sie diese Regel wirklich streichen?';
-$labels['headererror'] = 'Fehler in der Nachrichtenregel';
-$labels['inputempty'] = 'Eines oder mehrere Ihrer Streichhölzer sind leer';
-$labels['invalidcolor'] = 'Ungültige Farbe';
+$labels['mh_delete_description'] = 'Diese Regel löschen';
+$labels['mh_add'] = 'hinzufügen';
+$labels['mh_add_description'] = 'Eine Regel hinzufügen';
+$labels['deleteconfirm'] = 'Möchten Sie diese Regel wirklich löschen?';
+
+// these should never happen, but add anyways
+$labels['headererror'] = 'Diese Regel ist fehlerhaft';
+$labels['inputempty'] = 'Ein oder mehrere Treffer sind leer';
+$labels['invalidcolor'] = 'Ungültige Farbauswahl';
 ?>
