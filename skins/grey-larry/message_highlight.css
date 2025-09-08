@@ -25,11 +25,11 @@
 
 /* icon */
 #sections-table #rcmrowmh_preferences td.section {
-	background-position: 6px -262px;
+	background-position: 6px -238px;
 }
 
 #sections-table #rcmrowmh_preferences.selected td.section {
-	background-position: 6px -238px;
+	background-position: 6px -262px;
 }
 
 /* remove some colorpicker elements */
