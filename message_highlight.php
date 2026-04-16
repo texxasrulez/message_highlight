@@ -63,7 +63,8 @@ class message_highlight extends rcube_plugin
    */
   function storage_init($p)
   {
-    $p['fetch_headers'] = trim($p['fetch_headers'] . ' CC');
+    $headers = isset($p['fetch_headers']) ? trim((string) $p['fetch_headers']) : '';
+    $p['fetch_headers'] = trim($headers . ' CC');
     return($p);
   }
 
