@@ -1,0 +1,46 @@
+/* mail list */
+.rcmfd_mh_row td {
+    background-color: transparent !important;
+}
+
+.rcmfd_mh_row_light td,
+.rcmfd_mh_row_light td * {
+    color: #111 !important;
+}
+
+.rcmfd_mh_row_dark td,
+.rcmfd_mh_row_dark td * {
+    color: #fff !important;
+}
+
+/* preferences */
+
+.mh_preferences_row {
+    display: flex;
+    align-items: center;
+}
+
+.mh_preferences_row .mh_button {
+    border: 1px solid #ced4da;
+}
+
+/* pencil icon for settings item */
+.listing.iconized tr.mh_preferences>td.section:before {
+    content: "\f303";
+}
+
+/* remove some colorpicker elements */
+#mColorPickerTransparent, #mColorPickerSwatches, #mColorPickerImgGray {
+    display: none;
+}
+
+#mColorPickerFooter {
+    background-color: #ffffff !important;
+}
+
+
+#mColorPicker {
+    height: 83px !important;
+    padding: 2px !important;
+    background-color: #ffffff !important;
+}
