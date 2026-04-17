@@ -7,7 +7,7 @@
 
 class message_highlight extends rcube_plugin
 {
-    const PLUGIN_VERSION = '1.0.4';
+    const PLUGIN_VERSION = '1.0.5';
     const PLUGIN_INFO = array(
         'name' => 'message_highlight',
         'vendor' => 'Gene Hawkins',
